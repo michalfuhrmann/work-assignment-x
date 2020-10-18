@@ -10,6 +10,9 @@ import java.util.Collections;
 import java.util.List;
 import java.util.Optional;
 
+/**
+ * Bonus logic that is calculated whenever there is a snack and beverage in the order.
+ */
 public class BeverageAndSnackBonus implements BonusProgram {
 
     private static final String BONUS_TEXT = "Beverage and Snack Extra's Bonus";

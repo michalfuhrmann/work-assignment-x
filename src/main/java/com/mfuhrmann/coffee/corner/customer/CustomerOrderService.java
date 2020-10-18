@@ -6,6 +6,9 @@ import com.mfuhrmann.coffee.corner.calculation.BonusProgram;
 import java.util.List;
 import java.util.stream.Collectors;
 
+/**
+ * Service handling customer orders and responsible for calculating bonuses.
+ */
 public class CustomerOrderService {
 
     private final List<BonusProgram> bonusPrograms;

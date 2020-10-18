@@ -3,6 +3,9 @@ package com.mfuhrmann.coffee.corner.money;
 import java.math.BigDecimal;
 import java.util.Objects;
 
+/**
+ * Class wrapping the product's price.
+ */
 public class Price {
 
     private final BigDecimal value;

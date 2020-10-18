@@ -7,6 +7,9 @@ import com.mfuhrmann.coffee.corner.products.Product;
 import java.math.BigDecimal;
 import java.util.List;
 
+/**
+ * Class encapsulating the receipt data. It recalculates a values that can be later either obtained or printed to console.
+ */
 public class CustomerOrderReceipt {
 
     private final List<Product> customersProducts;
@@ -40,7 +43,7 @@ public class CustomerOrderReceipt {
         return new Price(total);
     }
 
-    public void printReceipt() {
+    public void print() {
         String currency = " CHF";
 
         System.out.println("=====  RECEIPT ======");
@@ -53,7 +56,7 @@ public class CustomerOrderReceipt {
         }
         System.out.println("==========");
         System.out.println("TOTAL: " + total + currency);
-        System.out.println("DISCOUNT: " + discount+ currency);
+        System.out.println("DISCOUNT: " + discount + currency);
         System.out.println("TO PAY: " + total.subtract(discount) + currency);
     }
 

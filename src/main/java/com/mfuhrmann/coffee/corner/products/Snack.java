@@ -2,6 +2,9 @@ package com.mfuhrmann.coffee.corner.products;
 
 import com.mfuhrmann.coffee.corner.money.Price;
 
+/**
+ * Snack subcategory
+ */
 public class Snack implements Product {
 
     private final String name;

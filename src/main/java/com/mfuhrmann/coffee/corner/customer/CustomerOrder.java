@@ -8,6 +8,9 @@ import java.util.Map;
 import java.util.Optional;
 import java.util.stream.Collectors;
 
+/**
+ * Class encapsulating customer order. Besides a list of product there is a possibility to present a stamp card.
+ */
 public class CustomerOrder {
 
     private final Map<ProductType, List<Product>> productsGrouped;

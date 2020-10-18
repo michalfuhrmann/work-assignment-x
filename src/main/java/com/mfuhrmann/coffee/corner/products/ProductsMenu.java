@@ -9,6 +9,10 @@ import java.util.Optional;
 import java.util.function.Function;
 import java.util.stream.Collectors;
 
+/**
+ * Class containing all available products in the menu.
+ *
+ */
 public class ProductsMenu {
 
     public static final String SMALL_COFFEE = "Small Coffee";
@@ -25,6 +29,11 @@ public class ProductsMenu {
     public ProductsMenu() {
     }
 
+    /**
+     * Finds menu product by its name
+     * @param name name
+     * @return optional of product or empty optional if not found
+     */
     public Optional<Product> findByName(String name) {
         return Optional.ofNullable(map.get(name));
     }

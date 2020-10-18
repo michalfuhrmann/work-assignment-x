@@ -26,7 +26,7 @@ public class App {
         CustomerStampCard customerStampCard = new CustomerStampCard(4);
 
         CustomerOrderReceipt customerOrderReceipt = customerOrderService.acceptOrder(new CustomerOrder(products, customerStampCard));
-        customerOrderReceipt.printReceipt();
+        customerOrderReceipt.print();
 
 
     }
